@@ -655,3 +655,11 @@ class Volume(MutableResource):
         """
 
         return super(Volume, self).delete({"removeMode": mode})
+
+
+class Device(MutableResource):
+    """Device resource model."""
+
+    __scheme__ = {
+        "name": String(optional=True),
+    }
