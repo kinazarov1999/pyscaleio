@@ -417,6 +417,14 @@ class Sdc(MutableResource):
         return self["mdmConnectionState"] == constants.SDC_MDM_STATE_CONNECTED
 
 
+class Sds(MutableResource):
+    """SDS resource model."""
+
+    __scheme__ = {
+        "name": String(optional=True),
+    }
+
+
 class ExportsInfo(Sequence):
     """Information about volume exports."""
 
